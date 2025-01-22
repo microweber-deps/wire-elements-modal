@@ -1,5 +1,5 @@
 {
-  "name": "wire-elements/modal",
+  "name": "microweber-deps/wire-elements-modal",
   "description": "Laravel Livewire modal component",
   "keywords": [
     "laravel",
@@ -14,9 +14,11 @@
     }
   ],
   "require-dev": {
-    "orchestra/testbench": "^8.5",
-    "phpunit/phpunit": "^9.5"
+    
   },
+   "replace": {
+        "wire-elements/modal":"*"
+    },
   "scripts": {
     "test": "vendor/bin/phpunit",
     "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
@@ -29,9 +31,7 @@
     }
   },
   "require": {
-    "php": "^8.1",
-    "livewire/livewire": "^3.2.3",
-    "spatie/laravel-package-tools": "^1.9"
+   
   },
   "autoload": {
     "psr-4": {
